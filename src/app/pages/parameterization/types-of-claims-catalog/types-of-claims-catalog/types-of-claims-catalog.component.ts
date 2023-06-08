@@ -14,7 +14,7 @@ import { truncateNDecimals } from 'src/app/utils/functions/truncate.function';
   styles: [],
 })
 export class TypesOfClaimsCatalogComponent extends BasePage implements OnInit {
-  columns: any[2] = [2];
+  columns: any[0] = [0];
   totalItems: number = 9;
   params = new BehaviorSubject<ListParams>(new ListParams());
 
