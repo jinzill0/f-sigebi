@@ -28,9 +28,9 @@ export class ValuesComponent extends BasePage implements OnInit {
   columnFilters1: any = [];
   values: ITablesType;
   params = new BehaviorSubject<ListParams>(new ListParams());
-  totalItems: number = 0;
+  totalItems: number = 100;
   params2 = new BehaviorSubject<ListParams>(new ListParams());
-  totalItems2: number = 0;
+  totalItems2: number = 100;
   settings2 = { ...this.settings };
   constructor(
     private modalService: BsModalService,
