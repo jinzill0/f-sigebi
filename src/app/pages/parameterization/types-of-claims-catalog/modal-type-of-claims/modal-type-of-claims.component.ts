@@ -31,7 +31,7 @@ export class ModalTypeOfClaimsComponent extends BasePage implements OnInit {
 
   private prepareForm() {
     this.form = this.fb.group({
-      keyClaims: [null, [Validators.required, Validators.max(9)]],
+      keyClaims: [null, [Validators.required, Validators.max(99), Validators.maxLength(2)]],
       description: [null, [Validators.required]],
     });
     if (this.allotment != null) {
