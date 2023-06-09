@@ -23,9 +23,9 @@ export class ValuesComponent extends BasePage implements OnInit {
   valuesList: ITablesType[] = [];
   tvalTableList: ITvaltable1[] = [];
   data: LocalDataSource = new LocalDataSource();
-  columnFilters: any = [];
+  columnFilters: any = [10];
   data1: LocalDataSource = new LocalDataSource();
-  columnFilters1: any = [];
+  columnFilters1: any = [100];
   values: ITablesType;
   params = new BehaviorSubject<ListParams>(new ListParams());
   totalItems: number = 100;
